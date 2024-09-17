@@ -1,5 +1,13 @@
-first_list = [10, True, 'abc']
-sec_list = [[1, 2], {'b': True}]
+my_dict = {}
+while True:
+    if len(my_dict) < 3:
+        key = input("Please enter key: ")
+        value = input("Please enter value: ")
 
-merged_list = first_list.__add__(sec_list)
-print(merged_list)
+        my_dict[key] = value
+    else:
+        break
+
+
+print(my_dict)
+
