@@ -99,10 +99,17 @@ task 1 lesson 26
 task 2 lesson 26 - разобрать!
 """
 # my_str = 'python'
-# for i in enumerate(my_str):
-#     res = i[:1] + i[:]
-#     print(res)
-
+# for i in range(len(my_str)):
+#     print(my_str[:i + 1])
+# for j in range(len(my_str)):
+#     print(my_str[:- j])
+# x = 0
+# for i in my_str:
+#     x += 1
+#     print(my_str[:x])
+# for j in my_str:
+#     x -= 1
+#     print(my_str[:x])
 
 """
 1. Создайте список, содержащий квадраты всех чисел от 1 до 20, но только тех, которые делятся на 3.
