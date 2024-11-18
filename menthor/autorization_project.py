@@ -66,18 +66,16 @@ def registration_user() -> None:
     """
     while True:
         login = input('Придумайте логин: ')
-        if len(login) < 3 or len(login) > 20:
-            print('Ваш логин должен быть больше 3 символов и меньше 20,'
-                  ' Введите повторно')
-        else:
+        if 3 < len(login) < 20:
             break
+        print('Ваш логин должен быть больше 3 символов и меньше 20, '
+              'Введите повторно')
     while True:
         password = input('Придумайте пароль: ')
-        if len(password) < 4 or len(password) > 32:
-            print('Пароль должен быть больше 4 символов и меньше 32,'
-                  ' Введите повторно')
-        else:
+        if 4 < len(login) < 32:
             break
+        print('Пароль должен быть больше 4 символов и меньше 32,'
+              ' Введите повторно')
     users = read_users()
     if login in users:
         print('Логин уже существует')
